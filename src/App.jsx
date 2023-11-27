@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import Note from "./components/Note";
-import Input from "./components/Input";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,36 +14,11 @@ function App() {
           </h1>
         </nav>
       </div>
-      <Input />
+      <div className='input-container'>
+      <input class='input' type="text" placeholder='Take a Note'/>
+    </div>
       <main>
-        {/* <Note /> */}
-        <div class="short">
-          <h3>A note about style</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            odit totam iusto, similique cum aliquam saepe amet ab! Animi, vitae.
-          </p>
-          <a href="">Read More</a>
-        </div>
-        <div class="tall">
-          <img src="./img/1.jpeg" alt="image" />
-        </div>
-        <div class="short">
-          <h3>A note about style</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            odit totam iusto, similique cum aliquam saepe amet ab! Animi, vitae.
-          </p>
-          <a href="">Read More</a>
-        </div>
-        <div class="short">
-          <h3>A note about style</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            odit totam iusto, similique cum aliquam saepe amet ab! Animi, vitae.
-          </p>
-          <a href="">Read More</a>
-        </div>
+        <Note />
       </main>
     </>
   );

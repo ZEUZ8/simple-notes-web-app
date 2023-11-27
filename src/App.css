@@ -5,7 +5,7 @@
 } */
 
 .header{
-    background: #e6e0cc;
+    background: #ffff;
     margin-top: -42px;
 }
 
@@ -38,12 +38,21 @@ main{
     grid-auto-rows: 250px;
     gap: 30px;
 }
-main div{
+.tall,.short{
     overflow: hidden;
     background: #ffff;
     border-radius: 6px;
     border: 16px solid #fff;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+}
+.Note-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.chumma{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main .short{
@@ -93,3 +102,4 @@ main .tall{
     border-radius: 8px;
     background: rgb(238, 238, 238);
   }
+
