@@ -5,7 +5,7 @@
 } */
 
 .header{
-    background: #ffff;
+    background: #fff;
     margin-top: -42px;
 }
 
@@ -15,7 +15,7 @@ nav{
 }
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 nav h1{
     text-transform: uppercase;
@@ -31,7 +31,7 @@ nav h1 div:last-child{
 }
 main{
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 20px auto;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -39,7 +39,9 @@ main{
     gap: 30px;
 }
 .tall,.short{
-    overflow: hidden;
+    /* overflow: hidden; */
+
+    overflow-y: scroll;
     background: #ffff;
     border-radius: 6px;
     border: 16px solid #fff;
@@ -53,6 +55,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 main .short{
